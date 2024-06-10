@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Layout 1</title>
+        <link rel="stylesheet" href="fontawesome-free-6.5.2-web/fontawesome-free-6.5.2-web/css/all.min.css">
+        <style type="text/css">
+            *
+            {
+               margin: 0px; 
+               padding: 0px;
+               box-sizing: border-box;
+               font-family: Arial;
+            }
+
+            #logo-div
+            {
+                width: 100%;
+                min-height: 50px;
+                background-color: blue;
+                padding-left: 2%;
+                line-height: 50px;
+                margin-bottom: 10px;
+            }
+
+            #nav-div
+            {
+                width: 100%;
+                min-height: 30px;  
+                background-color: white;  
+                text-align: center;
+                line-height: 30px;
+                margin-bottom: 10px;
+            }
+
+            nav ul{
+                display: flex;
+                padding: 10px;
+
+            }
+
+            nav ul li{
+                list-style: none;
+                margin-right: 10px;
+                padding: 5px 10px;
+                background-color: rgba(36, 30, 30, 0.449);
+                border-radius: 10%;       
+            }
+
+            nav ul li a{
+                text-decoration: none;
+                color: rgba(0, 0, 0, 0.604);
+            }
+            #header-banner-div
+            {
+                width: 100%;
+                min-height: 100px;  
+                background-color: lightgray;  
+                text-align: center;
+                line-height: 100px;
+                margin-bottom: 10px;
+            }
+
+            #main-div
+            {
+                width: 100%; 
+                margin-bottom: 10px;
+            }
+
+            #sidebar-div
+            {
+                display: flex;
+                flex-direction: column;
+                width: 20%;
+                min-height: 400px;  
+                background-color: lightgray;   
+                float: left;
+                line-height: 30px;
+                text-align: center;
+            }
+
+            .side{
+                padding-top: 5px;
+                display:flex;
+                flex-direction: column;
+            }
+
+
+            .side li a{
+                color: white;
+                text-decoration: none;
+            }
+
+            .side li{
+                padding: 10px;
+                background-color: rgb(55, 55, 55);
+                margin:20px 50px;
+                list-style: none;
+                border-radius: 4.5%;
+                justify-content: space-evenly;
+            }
+
+            #bodyarea-div
+            {
+                width: 75%;
+                min-height: 400px;  
+                background-color: lightgray;   
+                float: right;
+                text-align: center;
+                line-height: 400px;
+            }
+
+            .clearfix::after
+            {
+                content: "";
+                display: block;
+                clear: both;
+            }
+
+            #footer-div
+            {
+                width: 100%;
+                min-height: 50px;  
+                background-color: rgb(55, 55, 55);  
+                text-align: center;
+                line-height: 50px;  
+            }
+
+            #wrapper-div
+            {
+                width: 80%;  
+                margin: auto;
+            }
+
+            footer ul{
+                display: flex;
+                list-style: none;
+                padding: 0 50px;
+                gap: 1px;
+                justify-content: center;
+            }
+
+            #header-banner-div{
+                background-image: url(banner.png);
+                background-size: cover;
+                background-position: center;
+                padding: 90px;
+                border-style: solid;
+                border-color:grey;
+                border-width: 1px;
+
+            }
+
+            i{
+                margin:0 5px;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="wrapper-div">
+            <div id="logo-div">
+                <img src="AROVY_university_logo.png" alt="Logo Arovy"  height="100" width="130"> 
+            </div>
+                <div id="nav-div">
+                    <nav>
+                        <ul>
+                            <li><a href="#"><i class="fas fa-bars"></i>Menu</a></li>
+                            <li><a href="#"><i class="fas fa-envelope"></i>Contact</a></li>
+                            <li><a href="#"><i class="fas fa-search"></i>Recherche</a></li>
+                        </ul>
+                    </nav>
+            </div>
+            <div id="header-banner-div">
+            </div>
+            <div id="main-div" class="clearfix">
+                <div id="sidebar-div">
+
+                        <ul class="side">
+                            <li><a href="#"><i class="fas fa-plus"></i>Créer</a></li>
+                            <li><a href="#"><i class="fas fa-edit"></i>Modifier</a></li>
+                            <li><a href="#"><i class="fas fa-remove"></i>Supprimer</a></li>
+                            <li><a href="#"><i class="fa-solid fa-eye"></i>Voir</a></li>
+                        </ul>
+
+                </div>
+                <div id="bodyarea-div">
+                    Body Area
+                </div>
+            </div>
+            <div id="footer-div">
+                <footer>
+                    <ul>
+                        <li><a href="www.facebook.com"><img src="facebook.jpeg" height="20px" width="20px"></a></li>
+                        <li><a href="www.whatsapp.com"><img src="whatsapp.jpeg" height="20px" width="20px"></a></li>
+                        <li><a href="www.youtube.com"><img src="youtube.jpeg" height="20px" width="20px"></a></li>
+                    </ul>
+                </footer>
+            </div>
+        </div>
+    </body>
+</html>
