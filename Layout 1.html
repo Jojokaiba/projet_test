@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<!-- saved from url=(0059)file:///D:/CODAGE/Projet_frontend_backend-main/layout1.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        
+        <title>Layout 1</title>
+        <link rel="stylesheet" href="./Layout 1_files/all.min.css">
+        <style type="text/css">
+            *
+            {
+               margin: 0px; 
+               padding: 0px;
+               box-sizing: border-box;
+               font-family: Arial;
+            }
+
+            #logo-div
+            {
+                width: 100%;
+                min-height: 50px;
+                background-color: lightgray;
+                padding-left: 2%;
+                line-height: 50px;
+                margin-bottom: 5px;
+                border-top-left-radius: 10px;
+                border-top-right-radius: 10px;
+                text-align: center;
+            }
+
+            #nav-div
+            {
+                width: 100%;
+                min-height: 50px;  
+                background-color: #333;  
+                text-align: left;
+                line-height: 30px;
+                margin-bottom: 5px;
+            }
+
+            nav ul{
+                display: flex;
+                list-style: none;
+                padding-top: 10px;
+                padding-left: 20px;
+                padding-right: 10px;
+            }
+
+            nav ul li {
+                padding-right: 20px ;
+            }
+
+            nav ul li a {
+                background-color: white;
+                padding: 10px;
+                border-radius: 10px;
+                color: black;
+                text-decoration: none;
+                padding-top: 10px;
+                text-align: left;
+
+            }
+
+            #header-banner-div
+            {
+                width: 100%;
+                min-height: 100px;  
+                text-align: center;
+                line-height: 100px;
+                margin-bottom: 5px;
+                border-style:solid;
+                border-color: #696969c3;
+                border-radius: 5px;
+                height: 150px;
+                background-image: url("banner.png");
+                background-size: cover;
+                background-position: center;
+
+            }
+
+            #main-div
+            {
+                width: 100%; 
+                margin-bottom: 10px;
+            }
+
+            #sidebar-div
+            {
+                width: 20%;
+                min-height: 10px;  
+                background-color: black;   
+                float: left;
+                text-align: center;
+                border-radius: 10px;
+                padding: 20px 0px;
+            }
+
+            .sidebar {
+                list-style: none;
+                background-color: black;
+                border-radius: 10px;
+                display: flex;
+                justify-content: space-evenly;
+                flex-direction: column;
+            }
+
+            .sidebar li a{
+                text-decoration: none;
+                color: black;
+                background-color: white;
+                padding: 15px 10px;
+                background-size: 10%;
+                border-radius: 20px;
+                display:block;
+                width: 80%;
+                text-align: center;
+            }
+            .sidebar {
+                padding: 0px;
+            }
+
+            .sidebar li{
+                list-style: none;
+                margin-bottom: 15px;
+                display: flex;
+                justify-content: center;
+            }
+            #bodyarea-div
+            {
+                width: 75%;
+                min-height: 400px;  
+                float: right;
+                text-align: center;
+                line-height: 80px;
+                border-radius: 5px;
+                background-image: url("arovy.jpeg");
+                background-position: center;
+                background-size: cover;
+            }
+
+            .clearfix::after
+            {
+                content: "";
+                display: block;
+                clear: both;
+            }
+
+            #footer-div
+            {
+                width: 100%;
+                min-height: 50px;  
+                background-color: lightgray;  
+                text-align: center;
+                line-height: 50px;  
+                border-bottom-right-radius: 10px;
+                border-bottom-left-radius: 10px;
+            }
+
+            footer ul {
+                list-style: none;
+                display: flex;
+                justify-content: space-between;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+
+            footer ul li a {
+                text-decoration: none;
+            }
+
+            #wrapper-div
+            {
+                width: 80%;  
+                margin: auto;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="wrapper-div">
+            <div id="logo-div">
+            <img src="./Layout 1_files/AROVY_university_logo.png" width="130" height="100">
+            </div>
+            <div id="nav-div">
+                <nav>
+                    <ul>
+                        <li><a href="file:///D:/CODAGE/Projet_frontend_backend-main/layout1.html#"><i class="fas fa-bars"></i>  menu</a></li>
+                        <li><a href="file:///D:/CODAGE/Projet_frontend_backend-main/layout1.html#"><i class="fas fa-search"></i>  search</a></li>
+                        <li><a href="file:///D:/CODAGE/Projet_frontend_backend-main/layout1.html#"><i class="fas fa-envelope"></i>  contact</a></li>
+                    </ul>
+                </nav>
+            
+            </div>
+            <div id="header-banner-div">
+            </div>
+            <div id="main-div" class="clearfix">
+                <div id="sidebar-div">
+                    
+                        <ul class="sidebar">
+                            <li><a href="file:///D:/CODAGE/Projet_frontend_backend-main/layout1.html#"><i class="fas fa-plus"></i>creer</a></li>
+                            <li><a href="file:///D:/CODAGE/Projet_frontend_backend-main/layout1.html#"><i class="fas fa-edit"></i>modifier</a></li>
+                            <li><a href="file:///D:/CODAGE/Projet_frontend_backend-main/layout1.html#"><i class="fas fa-trash-alt"></i>suprimer</a></li>
+                            <li><a href="file:///D:/CODAGE/Projet_frontend_backend-main/layout1.html#"><i class="fas fa-eye"></i>voir</a></li>
+                        </ul>
+                </div>
+                <div id="bodyarea-div"> 
+                </div>
+            </div>
+            <div id="footer-div">
+                <footer>
+                    <ul>
+                        <li><a href="file:///D:/CODAGE/Projet_frontend_backend-main/layout1.html#"><i class="fab fa-facebook"></i>  facebook</a></li>
+                        <li><a herf="#"><i class="fab fa-youtube"></i>  youtube</a></li>
+                        <li><a herf="#"><i class="fab fa-whatsapp"></i>  whatsapp</a></li>
+                    </ul>
+                </footer>
+            </div>
+        </div>
+    
+</body></html>
